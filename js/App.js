@@ -85,3 +85,22 @@ const typed= new  Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+/*
+===========================================================
+MODES: dark and light
+===========================================================
+*/
+
+const modeIcon= document.querySelector('.mode-icon');
+
+modeIcon.addEventListener('click',()=>{
+    // console.log(modeIcon.classList.contains('bx-sun'));
+    if(modeIcon.classList.contains('bx-sun')){
+        modeIcon.classList.replace('bx-sun','bx-moon');
+    }else{
+        modeIcon.classList.replace('bx-moon','bx-sun');
+    }
+    console.log(document.body.classList)
+    document.body.classList.toggle('light-mode');
+})

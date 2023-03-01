@@ -26,6 +26,13 @@ Variables Globales
     --text-color:#fff;
     --main-color:#0ef;
 }
+
+.light-mode{
+    --bg-color:#FFFFFF;
+    --second-bg-color:#F7F7F7;
+    --text-color:#1f242d;
+    --main-color:#1CD6CE;
+}
 /*
 =============== 
 Global Styles
@@ -74,6 +81,7 @@ Header Section
     color: var(--text-color);
     font-weight: 600;
     cursor:default;
+    margin-right: auto;
 }
 
 .navbar a{
@@ -99,6 +107,17 @@ Header Section
     font-size: 3.6rem;
     color: var(--text-color);
     display:none; /*Se mostrata en dispositvos pequeños*/
+}
+
+.mode-bw{
+    display: flex;
+    margin-left: 4rem;
+    cursor: pointer;
+    /* background: red; */
+}
+.mode-bw .mode-icon{
+    font-size: 2.5rem;
+    color: var(--text-color);
 }
 
 /*
@@ -474,6 +493,10 @@ BREAKPOINTS
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+    }
+
+    .mode-icon{
+        padding-right:4rem ;
     }
 
     .navbar{
