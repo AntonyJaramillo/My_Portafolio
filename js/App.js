@@ -1,5 +1,18 @@
 /*
 ===========================================================
+TOGGLER ICON NAVBAR
+===========================================================
+ */
+let menuIcon= document.querySelector('#menu-icon');
+let navBar=document.querySelector('.navbar');
+ 
+menuIcon.onclick= () =>{
+    menuIcon.classList.toggle('bx-x')
+    navBar.classList.toggle('active');
+}
+
+/*
+===========================================================
 SCROLL SECTIONS ACTIVE LINKS 
 ===========================================================
  */
@@ -29,5 +42,12 @@ window.onscroll = ()=>{
     */
    let header=document.querySelector('header');
    header.classList.toggle('sticky',window.scrollY>100);
+    /*
+    ===========================================================
+    REMOVE TOGGLER ICON AND NAVBAR WHEN CLICK NAV LINK (SCROLL)
+    ===========================================================
+    */
+    menuIcon.classList.remove('bx-x')
+    navBar.classList.remove('active');
 }
 
