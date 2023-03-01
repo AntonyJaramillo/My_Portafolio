@@ -46,7 +46,11 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-
+/*
+============================================================= 
+Header Section
+=============================================================
+*/
 .header{
     position: fixed;
     top: 0;
@@ -88,24 +92,21 @@ section{
     display:none; /*Se mostrata en dispositvos pequeños*/
 }
 
-
-/* Home section */
+/*
+============================================================= 
+Home Section
+=============================================================
+*/
 
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .home-img img{
     width: 35vw;
 }
-
-/* .home-img img{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-} */
 
 .home-content h3{
     font-size: 3.2rem;
@@ -165,7 +166,11 @@ span{
     box-shadow: none;
 }
 
-/* About section */
+/*
+============================================================= 
+About Section
+=============================================================
+*/
 
 .about{
     display: flex;
@@ -198,7 +203,11 @@ span{
     margin:2rem 0 3rem;
 }
 
-/* Services */
+/*
+============================================================= 
+Services Section
+=============================================================
+*/
 .service h2{
     margin-bottom: 5rem;
 }
@@ -237,7 +246,12 @@ span{
     margin:1rem 0 3rem;
 }
 
-/* Portafolio: Projects */
+/*
+============================================================= 
+Portafolio Section: Projects
+=============================================================
+*/
+
 .portafolio{
     background: var(--second-bg-color);
 }
@@ -317,7 +331,11 @@ span{
     color:var(--second-bg-color);
 }
 
-/* Contact */
+/*
+============================================================= 
+Contact Section
+=============================================================
+*/
 
 .contact h2{
     margin-bottom: 3rem;
@@ -357,8 +375,11 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
-
-/* Footer */
+/*
+============================================================= 
+Footer Section
+=============================================================
+*/
 
 .footer{
     display: flex;
@@ -411,6 +432,17 @@ BREAKPOINTS
     .section{
         padding: 10rem 3% 2rem;
     }
+
+    .service{
+        padding-bottom: 7rem;
+    }
+
+    .portafolio{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
     .footer{
         padding: 2rem 3%;
     }
@@ -453,9 +485,57 @@ BREAKPOINTS
         font-size: 5rem;
     }
 
-    /* .home-img{
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .service h2{
+        margin-bottom: 3rem;
+    }
+    .portafolio h2{
+        margin-bottom: 3rem;
+    }
+    .portafolio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 617px){
+    .portafolio-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
         width: 100%;
-    } */
+    }
+}
+
+@media (max-width: 365px){
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 
