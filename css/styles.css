@@ -88,19 +88,23 @@ section{
     display:none; /*Se mostrata en dispositvos pequeños*/
 }
 
+
+/* Home section */
+
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-img{
-    width: 50%;
+.home-img img{
+    width: 35vw;
 }
 
 /* .home-img img{
     object-fit: cover;
     width:100%;
     height:100%;
+    overflow:hidden;
 } */
 
 .home-content h3{
@@ -161,7 +165,7 @@ span{
     box-shadow: none;
 }
 
-/* Home section */
+/* About section */
 
 .about{
     display: flex;
@@ -449,9 +453,9 @@ BREAKPOINTS
         font-size: 5rem;
     }
 
-    .home-img{
+    /* .home-img{
         width: 100%;
-    }
+    } */
 }
 
 
